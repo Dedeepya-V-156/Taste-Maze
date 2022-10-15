@@ -1,0 +1,39 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navbar"); -%>
+
+<%if(x==1){%>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <%if(x==1){%>
+                    <div class="container">
+                        <div class="jumbotron">
+                            <%if(show[0].show.image!=null){%>
+                                <img class="img-thumbnail" style="margin-left:30%;width: 41%;" src='<%=show[0].show.image.original%>'>
+                                <%}%>
+                            <%}%>
+                        </div>
+                    </div>
+                    <%}%>           
+    <div class="col-lg-6"><strong>Name</strong>:<%=show[0].show.name%> </div>
+    <div class="col-lg-6"><strong>Type</strong>:<%=show[0].show.type%></div>
+    <div class="col-lg-6"><strong>Language</strong>:<%=show[0].show.language%></div>
+    <div class="col-lg-6"> <strong>Status</strong>:<%=show[0].show.status%></div>
+    <div class="col-lg-6"> <strong>Premiered</strong>:<%=show[0].show.premiered%></div>
+    <div class="col-lg-6"> <strong>Time</strong>:<%=show[0].show.schedule.time%></div>
+    <div class="col-lg-6"> <strong>Days</strong>:<%show[0].show.schedule.days.forEach(function(day){%><%=day%> <%})%></div>
+    <div class="col-lg-6"><strong>Channel</strong>:<%=show[0].show.network.name%></div>
+    <div class="col-lg-6"><strong>Country</strong>:<%=show[0].show.network.country.name%></div>
+    <div class="col-lg-6"> <strong>Summary</strong>:<%=show[0].show.summary%></div>
+
+
+    <form  action="/top_shows" method="POST">
+        <button type="submit" class="btn-new" id="show-search"  >Recommend Similar TV Shows</button>
+        </form>
+        <form  action="/results" method="POST">
+            <button type="submit" class="btn-2" id="show-search" >TV Shows and Movies with Similar titles</button>
+            </form>
+    </div>
+</div>
+
+<%-include("partials/footer");%>

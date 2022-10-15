@@ -1,0 +1,32 @@
+<div class="row mt-3">
+    <div class="col">
+     
+    </div>
+    <div class="col card" style="width: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%=show.name%></h5>
+        <p class="card-text"><%- show.summary%></p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Genre: <%=show.genres%></li>
+          <li class="list-group-item">
+            Language: <%=show.language%>
+          </li>
+          <li class="list-group-item">
+            Run time: <%=show.averageRuntime%>
+          </li>
+          <li class="list-group-item">Status: <%=show.status%></li>
+          <li class="list-group-item">
+            Date Ended: <%=show.ended%>
+          </li>
+          
+        </ul>
+        <div class="my-5">
+          <a class="btn btn-primary" href="/">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form  action="/top_shows" method="POST">
+    <button type="submit" class="btn-new" id="show-search"  >Recommend Similar TV Shows</button>
+    </form>
+</html>

@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navbar"); -%>
+<section>
+    <div class="container">
+        <h1 class="display-3">Movies / Shows with similar names are!</h1>
+        <div class="row">
+        
+            <% show['Search'].forEach(function(movie) { %>
+                <div class="col">
+                    <div class="card text-center">
+                     
+                            <h3 class="card-title"><%= movie['Title'] %></h3>
+                       
+                        <div class="card-body">
+                            <img class="img-thumbnail" src ="<%= movie['Poster'] %>" ></img>
+                            <p class="card-text"><span class="text-uppercase"><%= movie['Type'] %></span></p>
+                            <p class="card-text"><%= movie['Award'] %></p>
+                        </div>
+                        <div class="card-footer">
+                            <p><%= movie['Year'] %></p>
+                        </div>
+                    </div>
+                </div>
+            
+            <% }) %>
+
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<%- include("partials/footer"); -%>

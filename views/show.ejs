@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navbar"); -%>
+
+<div class="container">
+    <div class="jumbotron">
+        <%if(show[0].show.image!=null){%>
+            <img class="thubmnail" src='<%=show[0].show.image.medium%>'><br>
+            <%}%>
+            <% else{ %>
+                <h1>"Try again</h1>
+              <% } %>
+        score:<%=show[0].score%><br>
+        name:<%=show[0].show.name%><br>
+        type:<%=show[0].show.type%><br>
+        language:<%=show[0].show.language%><br>
+        status:<%=show[0].show.status%><br>
+        premiered:<%=show[0].show.priemiered%><br>
+        summary:<%=show[0].show.summary%><br>
+        time:<%=show[0].show.schedule.time%>
+        days:<%show[0].show.schedule.days.forEach(function(day){%>
+                <%=day%> 
+        <%})%><br>
+        
+        Channel:<%=show[0].show.network.name%><br>
+        Country:<%=show[0].show.network.country.name%><br>
+    </div>
+</div>

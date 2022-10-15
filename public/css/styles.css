@@ -1,0 +1,154 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
+    padding-top: 7rem;
+    background-color: #DDDDDD;
+  }
+  h1{
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15rem;
+  }
+  
+  h2{
+    font-weight: 900;
+    color: #222831;
+    text-align: center;
+    padding-top: 15rem;
+  }
+  
+  .btn-form{
+    background-color: #222831;
+    color: #DDDDDD !important;
+    font-family: "Montserrat";
+    padding: 5px 15px;
+    border-radius: 6px;
+  }
+
+  .btn-new{
+    background-color: #222831;
+    color: #DDDDDD !important;
+    font-family: "Montserrat";
+    /* align-self: centre; */
+    padding: 5px 15px;
+    border-radius: 6px;
+    margin: 0;
+   top: 50%;
+   left: 50%; 
+  -ms-transform: translate(-50%, -50%);
+   transform: translate( 60%, 90%);
+  }
+
+  .btn-2{
+    background-color: #222831;
+    color: #DDDDDD !important;
+    font-family: "Montserrat";
+    /* align-self: centre; */
+    padding: 5px 15px;
+    border-radius: 6px;
+    margin: 0;
+   top: 50%;
+   left: 50%; 
+  -ms-transform: translate(-50%, -50%);
+   transform: translate( 40%, 90%);
+  }
+
+  .btn-new:hover{
+    background-color: #042961;
+    color: #de481a !important;
+  }
+
+  
+  .btn-form:hover{
+    background-color: #042961;
+    color: #de481a !important;
+  }
+  
+  /* navbar */
+  .navbar{
+    text-align: center;
+    padding-bottom:0.5rem;
+  }
+  .navbar-brand{
+    text-align: center;
+    font-family: "Montserrat" !important;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .navbar-brand:hover{
+    font-weight: 800;
+  }
+  
+  .nav-link{
+    font-family: "Montserrat" !important;
+    color: #DDDDDD !important;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: centre;
+  }
+  .nav-link:hover{
+    color: #F05454 !important;
+  }
+  
+  .nav-item{
+    text-align: center;
+    padding: 5 18px;
+  }
+  
+  .navbar-toggler-icon{
+    color: #DDDDDD !important;
+  }
+  
+  /* cards */
+  
+  .row{
+    padding-left: 6rem ;
+    padding-right: 6rem;
+  }
+  .col{
+    padding-bottom: 3rem;
+  }
+  .card{
+    padding: 1rem 1rem;
+    /* width: 20rem;
+    height: 26rem; */
+  }
+  .card-title{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #F05454;
+  }
+  
+  .card-text{
+    color: #222831;
+    font-size: 0.8rem;
+  }
+  
+  
+  .btn{
+    color: #DDDDDD;
+    padding-left: 6rem;
+    background-color: #F05454;
+    border: none;
+  }
+  .btn:hover{
+    background-color: white;
+    border: solid #F05454;
+    color: #F05454;
+  }
+  
+  
+  /* footer */
+  .footer{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    color: #DDDDDD;
+    background-color: #222831;
+  }
+  

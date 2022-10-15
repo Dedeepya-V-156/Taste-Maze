@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navbar"); -%>
+
+<div class="row">
+  <% for (var i = 0; i < 5; i++) { %>
+    <div class="col">
+      <div class="card">
+        <iframe src="<%= show[i].yUrl%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h3 class="card-title"><%= show[i].Name %></h3>
+          <p class="card-text">(<%= show[i].Type %>)</p>
+          <p class="card-text"><%= show[i].wTeaser %></p>
+
+        </div>
+      </div>
+    </div>
+  <%} %>
+
+</div>
+<%-include("partials/footer");%>

@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navbar"); -%>
+
+<div class="front-page">
+    <div class="search_body">
+      <div class="form_input">
+        <div class="col-sm-12" style="margin-left: 4%;">
+        <h3>Find the details of your favourite show</h3>
+        <form class="form-inline" method="POST" action="/show">
+            <div class="form-group">
+                <input class="form-control" type="text" name="showname" placeholder="Enter name of the show">
+            </div>
+                <button type="submit" class="btn-form" id="show-search" >  Search  </button>
+
+                <form class="form-inline" method="POST" action="/success">
+            </div>
+            
+        </form>
+        </div>
+    </div>
+    </div>
+
+<%-include("partials/footer")%>

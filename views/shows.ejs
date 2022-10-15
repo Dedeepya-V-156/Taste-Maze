@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navbar"); -%>
+
+<div class="front-page">
+  <div class="search_body">
+    <div class="form_input">
+      <h2>Recommend Shows like...</h2>
+      <form  action="/top_shows" method="POST">
+        <input
+          type="text"
+          placeholder="Enter show you like"
+          name="name"
+        />
+        <button type="submit" class="btn-form" id="show-search">Recommend</button>
+      </form>
+
+  </div>
+
+</div>
+
+
+
+<%- include("partials/footer"); -%>
